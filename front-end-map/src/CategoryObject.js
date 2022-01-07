@@ -35,6 +35,10 @@ function CategoryObject({ category }) {
                             </ul>
                         </>
                     }
+                    {
+                        (!(c.films.data.length > 0) && !(c.books.data.length > 0)) &&
+                        <h6 className='empty'> {"We don't have any works of this category. We're sorry..."} </h6>
+                    }
                 </div>
             }
         </>

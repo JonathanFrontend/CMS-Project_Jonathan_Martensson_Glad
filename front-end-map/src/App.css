@@ -228,6 +228,7 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 2%;
 }
 .work-category ul {
   display: flex;
@@ -290,6 +291,12 @@ h4, h5, h6 {
 }
 h6 {
   font-size: .9em;
+}
+
+.empty {
+  text-align: center !important;
+  color: #000;
+  width: 100%;
 }
 
 .rating {

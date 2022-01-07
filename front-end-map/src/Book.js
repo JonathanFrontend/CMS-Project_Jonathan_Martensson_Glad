@@ -23,8 +23,11 @@ function Book({ book }) {
             {
                 s &&
                 <div className='main-sub-content'>
+                    <section>
+                        <h6>Author: {b.author}</h6>
+                    </section>
                     <section className='rating'>
-                        <div><i className="fas fa-star"></i>{` ${rating / 2}/5`}</div>
+                        <div><i className="fas fa-star"></i>{` ${rating}/10`}</div>
                         {/* {rating &&
                             <div className="rating-box">
                                 <div className="star-outer">
@@ -32,9 +35,6 @@ function Book({ book }) {
                                 </div>
                             </div>
                         } */}
-                    </section>
-                    <section>
-
                     </section>
                     {
                         (b.categories.data.length > 0) &&
